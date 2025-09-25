@@ -270,7 +270,7 @@ body {
 .search-btn:hover {
     background: #1e3a6b;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px #26538E80;
+    box-shadow: 0 5px 15px rgba(38, 83, 142, 0.5);
 }
 
 /* About Section */
@@ -437,7 +437,7 @@ body {
 .cta-button:hover {
     background: #1e3a6b;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px #26538E80;
+    box-shadow: 0 5px 15px rgba(38, 83, 142, 0.5);
 }
 
 /* Destination Section */
@@ -469,7 +469,7 @@ body {
 .destination-header .brand-text {
     font-family: cursive;
     font-size: 1.4rem;
-    color: #FF6F3D;
+    color: #26538E;
     margin-bottom: 20px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -497,7 +497,7 @@ body {
     overflow: visible;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    background: white;
+    background: #E1DEEB;
     position: relative;
 }
 
@@ -526,50 +526,38 @@ body {
 
 .dest-name-container {
     position: absolute;
-    top: 25px;
-    left: -15px;
+    top: -15px;
+    left: 0px;
     z-index: 4;
 }
 
 .dest-name {
-    background: #FF6F3D;
-    color: white;
+    background: #26538E;
+    color: #E1DEEB;
     padding: 12px 20px;
     border-radius: 8px;
     font-size: 1rem;
     font-weight: 700;
-    box-shadow: 0 4px 15px rgba(255, 111, 61, 0.3);
+    box-shadow: 0 4px 15px rgba(38, 83, 142, 0.3);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     white-space: nowrap;
     position: relative;
 }
 
-.dest-name::before {
-    content: '';
-    position: absolute;
-    left: -8px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    border-right: 8px solid #FF6F3D;
-}
 
 .dest-tours {
     position: absolute;
     bottom: 25px;
-    right: 25px;
-    background: #FF6F3D;
-    color: white;
+    right: 0px;
+    background: #26538E;
+    color: #E1DEEB;
     padding: 10px 18px;
-    border-radius: 25px;
+    border-radius: 8px 0px 8px 8px;
     font-size: 0.9rem;
     font-weight: 700;
     z-index: 3;
-    box-shadow: 0 4px 15px rgba(255, 111, 61, 0.3);
+    box-shadow: 0 4px 15px rgba(38, 83, 142, 0.3);
     min-width: 80px;
     text-align: center;
 }
@@ -649,12 +637,20 @@ body {
     }
     
     .dest-name-container {
-        left: -10px;
+        top: -12px;
+        left: 0px;
     }
     
     .dest-name {
         padding: 10px 16px;
         font-size: 0.9rem;
+    }
+    
+    .dest-tours {
+        bottom: 20px;
+        padding: 8px 14px;
+        font-size: 0.8rem;
+        border-radius: 6px 0px 6px 6px;
     }
 }
 
@@ -728,7 +724,8 @@ body {
     }
     
     .dest-name-container {
-        left: -5px;
+        top: -10px;
+        left: 0px;
     }
     
     .dest-name {
@@ -736,9 +733,10 @@ body {
         font-size: 0.8rem;
     }
     
-    .dest-name::before {
-        border-top: 6px solid transparent;
-        border-bottom: 6px solid transparent;
-        border-right: 6px solid #FF6F3D;
+    .dest-tours {
+        bottom: 15px;
+        padding: 6px 12px;
+        font-size: 0.75rem;
+        border-radius: 5px 0px 5px 5px;
     }
 }
