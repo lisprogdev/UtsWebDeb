@@ -366,28 +366,28 @@ body {
 /* Individual Card Backgrounds */
 .activities-card {
     background: linear-gradient(rgba(0, 100, 200, 0.6), rgba(0, 100, 200, 0.6)), 
-                url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');
+                url('../img/Wakatobi Dive Trip.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .travel-card {
     background: linear-gradient(rgba(0, 150, 0, 0.6), rgba(0, 150, 0, 0.6)), 
-                url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');
+                url('../img/Pantai One Mbiha.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .guide-card {
     background: linear-gradient(rgba(0, 150, 150, 0.6), rgba(0, 150, 150, 0.6)), 
-                url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');
+                url('../img/Desa Wisata Kahianga.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .location-card {
     background: linear-gradient(rgba(200, 50, 0, 0.6), rgba(200, 50, 0, 0.6)), 
-                url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');
+                url('../img/Benteng Liya Togo.jpg');
     background-size: cover;
     background-position: center;
 }
