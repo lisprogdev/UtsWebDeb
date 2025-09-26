@@ -15,53 +15,147 @@
                 <p>TRAVEL</p>
             </div>
             <ul class="nav-menu">
-                <li><a href="#" class="nav-link active">Beranda</a></li>
-                <li><a href="#" class="nav-link">Tentang</a></li>
-                <li><a href="#" class="nav-link">Destinasi</a></li>
-                <li><a href="#" class="nav-link">Hotel</a></li>
-                <li><a href="#" class="nav-link">Blog</a></li>
-                <li><a href="page/kontak.html" class="nav-link">Kontak</a></li>
+                <li><a href="#" class="nav-link active">
+                    <img src="img/home.png" alt="Home" class="nav-icon">
+                    <span>Beranda</span>
+                </a></li>
+                <li><a href="#" class="nav-link">
+                    <img src="img/About.png" alt="About" class="nav-icon">
+                    <span>Tentang</span>
+                </a></li>
+                <li><a href="#" class="nav-link">
+                    <img src="img/destination.png" alt="Destination" class="nav-icon">
+                    <span>Destinasi</span>
+                </a></li>
+                <li><a href="#" class="nav-link">
+                    <img src="img/hotel.png" alt="Hotel" class="nav-icon">
+                    <span>Hotel</span>
+                </a></li>
+                <li><a href="#" class="nav-link">
+                    <img src="img/blogger.png" alt="Blog" class="nav-icon">
+                    <span>Blog</span>
+                </a></li>
+                <li><a href="page/kontak.html" class="nav-link">
+                    <img src="img/add-contact.png" alt="Contact" class="nav-icon">
+                    <span>Kontak</span>
+                </a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <p class="welcome-text">Selamat Datang di Wakatobi</p>
-                <h1 class="hero-title">Surga Terumbu Karang<br>dan Keindahan<br>Bawah Laut</h1>
-                <p class="hero-subtitle">Nikmati keindahan Taman Nasional Wakatobi dengan diving, snorkeling, dan eksplorasi budaya lokal</p>
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <img src="img/map-location.png" alt="Location" class="badge-icon">
+                    <span class="badge-text">Taman Nasional Wakatobi</span>
+                </div>
+                <h1 class="hero-title">
+                    Surga Terumbu Karang <span class="highlight">Wakatobi</span>
+                </h1>
+                <p class="hero-description">
+                    Jelajahi keajaiban bawah laut dengan terumbu karang terbaik dunia, diving spektakuler, dan budaya lokal yang memukau di Sulawesi Tenggara
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-explore">
+                        <img src="img/explore.png" alt="Explore" class="btn-icon">
+                        <span>Mulai Eksplorasi</span>
+                    </button>
+                    <button class="btn-video">
+                        <img src="img/film.png" alt="Video" class="btn-icon">
+                        <span>Tonton Video</span>
+                    </button>
+                </div>
             </div>
-            <div class="play-button">
-                <div class="play-icon">
-                    <div class="triangle"></div>
+            
+            <div class="hero-media">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/i9f0go0W2ak?si=H-QAUMMXQjo89CtV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-
-        <!-- Search/Filter Section -->
+        
+        <!-- Search Box - Outside Grid Layout -->
         <div class="search-container">
             <div class="search-tabs">
-                <button class="tab-btn">Cari Tour</button>
-                <button class="tab-btn active">Hotel</button>
-            </div>
-            <div class="search-form">
-                <div class="form-group">
-                    <input type="text" placeholder="DESTINASI" class="form-input">
+                <input type="radio" id="tab-wisata" name="search-tab" checked>
+                <input type="radio" id="tab-hotel" name="search-tab">
+                
+                <div class="tab-labels">
+                    <label for="tab-wisata" class="tab-label">
+                        <img src="img/travel.png" alt="Wisata" class="tab-icon">
+                        <span>Wisata</span>
+                    </label>
+                    <label for="tab-hotel" class="tab-label">
+                        <img src="img/hotel.png" alt="Hotel" class="tab-icon">
+                        <span>Hotel</span>
+                    </label>
                 </div>
-                <div class="form-group">
-                    <input type="date" placeholder="TANGGAL CHECK-IN" class="form-input">
+                
+                <div class="tab-content">
+                    <!-- Wisata Search Content -->
+                    <div class="search-content wisata-content">
+                        <div class="search-fields">
+                            <div class="search-field">
+                                <img src="img/location.png" alt="Location" class="field-icon">
+                                <input type="text" placeholder="Mau ke mana?" class="search-input">
+                            </div>
+                            <div class="search-field">
+                                <img src="img/multiple-users-silhouette.png" alt="Travelers" class="field-icon">
+                                <select class="search-select">
+                                    <option value="">Jumlah Traveler</option>
+                                    <option value="1">1 Orang</option>
+                                    <option value="2">2 Orang</option>
+                                    <option value="3">3 Orang</option>
+                                    <option value="4">4 Orang</option>
+                                    <option value="5+">5+ Orang</option>
+                                </select>
+                            </div>
+                            <div class="search-field">
+                                <img src="img/travel.ico" alt="Date" class="field-icon">
+                                <input type="date" class="search-input date-input">
+                            </div>
+                            <button class="search-btn">
+                                <img src="img/explore.png" alt="Search" class="search-btn-icon">
+                                <span>Cari Wisata</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Hotel Search Content -->
+                    <div class="search-content hotel-content">
+                        <div class="search-fields">
+                            <div class="search-field">
+                                <img src="img/location.png" alt="Location" class="field-icon">
+                                <input type="text" placeholder="Pilih destinasi" class="search-input">
+                            </div>
+                            <div class="search-field">
+                                <img src="img/bad.png" alt="Rooms" class="field-icon">
+                                <select class="search-select">
+                                    <option value="">Kamar & Tamu</option>
+                                    <option value="1">1 Kamar, 1 Tamu</option>
+                                    <option value="2">1 Kamar, 2 Tamu</option>
+                                    <option value="3">2 Kamar, 3 Tamu</option>
+                                    <option value="4">2 Kamar, 4 Tamu</option>
+                                    <option value="5+">3+ Kamar</option>
+                                </select>
+                            </div>
+                            <div class="search-field">
+                                <img src="img/travel.ico" alt="Date" class="field-icon">
+                                <input type="date" class="search-input date-input">
+                            </div>
+                            <button class="search-btn">
+                                <img src="img/hotel.png" alt="Search" class="search-btn-icon">
+                                <span>Cari Hotel</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="date" placeholder="TANGGAL CHECK-OUT" class="form-input">
-                </div>
-                <div class="form-group">
-                    <input type="text" placeholder="BATAS HARGA" class="form-input">
-                </div>
-                <button class="search-btn">CARI</button>
             </div>
         </div>
+        
     </section>
 
 
@@ -136,7 +230,9 @@
                 <div class="dest-card">
                     <div class="dest-image">
                         <img src="img/Benteng Liya Togo.jpg" alt="Benteng Liya Togo">
-                        <div class="dest-tours">8 Tours</div>
+                        <div class="dest-tours">
+                            <span>8 Tours</span>
+                        </div>
                     </div>
                     <div class="dest-name-container">
                         <div class="dest-name">Benteng Liya Togo</div>
@@ -146,7 +242,9 @@
                 <div class="dest-card">
                     <div class="dest-image">
                         <img src="img/Desa Wisata Kahianga.jpg" alt="Desa Wisata Kahianga">
-                        <div class="dest-tours">2 Tours</div>
+                        <div class="dest-tours">
+                            <span>2 Tours</span>
+                        </div>
                     </div>
                     <div class="dest-name-container">
                         <div class="dest-name">Desa Wisata Kahianga</div>
@@ -156,7 +254,9 @@
                 <div class="dest-card">
                     <div class="dest-image">
                         <img src="img/Onemohute Wakatobi.jpg" alt="Onemohute Wakatobi">
-                        <div class="dest-tours">5 Tours</div>
+                        <div class="dest-tours">
+                            <span>5 Tours</span>
+                        </div>
                     </div>
                     <div class="dest-name-container">
                         <div class="dest-name">Onemohute Wakatobi</div>
@@ -166,7 +266,9 @@
                 <div class="dest-card">
                     <div class="dest-image">
                         <img src="img/Pantai One Mbiha.jpg" alt="Pantai One Mbiha">
-                        <div class="dest-tours">5 Tours</div>
+                        <div class="dest-tours">
+                            <span>5 Tours</span>
+                        </div>
                     </div>
                     <div class="dest-name-container">
                         <div class="dest-name">Pantai One Mbiha</div>
@@ -177,185 +279,206 @@
     </section>
 
     <!-- Tour Packages Section -->
-    <section class="tour-packages-section">
+    <section class="premium-tours-section">
         <div class="container">
-            <div class="tour-header">
-                <p class="brand-text">Wakatobi Travel</p>
-                <h2>Paket Tour Terbaik</h2>
+            <div class="premium-header">
+                <div class="header-badge">
+                    <span>Premium Experience</span>
+                </div>
+                <h2 data-text="Paket Tour Eksklusif">Paket Tour Eksklusif</h2>
+                <p>Jelajahi keindahan Wakatobi dengan layanan premium terbaik</p>
             </div>
             
-            <div class="tour-cards">
-                <div class="tour-card">
-                    <div class="tour-image">
-                        <img src="img/Benteng Liya Togo.jpg" alt="Tour Wakatobi">
-                        <div class="price-tag">Rp 2.500.000/orang</div>
-                    </div>
-                    <div class="tour-details">
-                        <div class="tour-duration">8 HARI TOUR</div>
-                        <h3 class="tour-title">Eksplorasi Sejarah Wakatobi</h3>
-                        <div class="tour-location">
-                            <i class="location-icon">📍</i>
-                            <span>Benteng Liya Togo, Wakatobi</span>
-                        </div>
-                        <div class="tour-amenities">
-                            <div class="amenity">
-                                <img src="img/bad.png" alt="Bed" class="amenity-icon">
-                                <span>2</span>
-                            </div>
-                            <div class="amenity">
-                                <img src="img/multiple-users-silhouette.png" alt="Users" class="amenity-icon">
-                                <span>3</span>
-                            </div>
-                        </div>
-                        <div class="tour-feature">
-                            <img src="img/museum.png" alt="Museum" class="feature-icon">
-                            <span>Near Historical Site</span>
+            <div class="premium-tours-grid">
+                <div class="premium-tour-card">
+                    <div class="tour-image-wrapper">
+                        <img src="img/Benteng Liya Togo.jpg" alt="Historical Tour">
+                        <div class="image-overlay">
+                            <div class="tour-category">Sejarah</div>
                         </div>
                     </div>
-                </div>
-
-                <div class="tour-card">
-                    <div class="tour-image">
-                        <img src="img/Onemohute Wakatobi.jpg" alt="Tour Wakatobi">
-                        <div class="price-tag">Rp 3.200.000/orang</div>
-                    </div>
-                    <div class="tour-details">
-                        <div class="tour-duration">10 HARI TOUR</div>
-                        <h3 class="tour-title">Petualangan Bawah Laut</h3>
-                        <div class="tour-location">
-                            <i class="location-icon">📍</i>
-                            <span>Onemohute, Wakatobi</span>
+                    <div class="tour-content">
+                        <div class="tour-meta">
+                            <span class="duration">8 Hari</span>
+                            <span class="rating">⭐ 4.9</span>
                         </div>
-                        <div class="tour-amenities">
-                            <div class="amenity">
-                                <img src="img/bad.png" alt="Bed" class="amenity-icon">
-                                <span>2</span>
+                        <h3>Eksplorasi Sejarah Wakatobi</h3>
+                        <p>Temukan jejak sejarah dan budaya kuno di Benteng Liya Togo</p>
+                        <div class="tour-highlights">
+                            <div class="highlight">
+                                <img src="img/historical.png" alt="Historical" class="highlight-icon">
+                                <span>Situs Bersejarah</span>
                             </div>
-                            <div class="amenity">
-                                <img src="img/multiple-users-silhouette.png" alt="Users" class="amenity-icon">
-                                <span>3</span>
+                            <div class="highlight">
+                                <img src="img/village.png" alt="Village" class="highlight-icon">
+                                <span>Maks 6 Orang</span>
                             </div>
                         </div>
-                        <div class="tour-feature">
-                            <img src="img/wave.png" alt="Wave" class="feature-icon">
-                            <span>Near Beach</span>
+                        <div class="tour-pricing">
+                            <span class="current-price">Rp 2.500.000</span>
+                            <span class="price-note">per orang</span>
                         </div>
+                        <button class="book-now-btn">Pesan Sekarang</button>
                     </div>
                 </div>
 
-                <div class="tour-card">
-                    <div class="tour-image">
-                        <img src="img/Desa Wisata Kahianga.jpg" alt="Tour Wakatobi">
-                        <div class="price-tag">Rp 1.800.000/orang</div>
-                    </div>
-                    <div class="tour-details">
-                        <div class="tour-duration">7 HARI TOUR</div>
-                        <h3 class="tour-title">Budaya Lokal Wakatobi</h3>
-                        <div class="tour-location">
-                            <i class="location-icon">📍</i>
-                            <span>Desa Kahianga, Wakatobi</span>
-                        </div>
-                        <div class="tour-amenities">
-                            <div class="amenity">
-                                <img src="img/bad.png" alt="Bed" class="amenity-icon">
-                                <span>2</span>
-                            </div>
-                            <div class="amenity">
-                                <img src="img/multiple-users-silhouette.png" alt="Users" class="amenity-icon">
-                                <span>3</span>
-                            </div>
-                        </div>
-                        <div class="tour-feature">
-                            <img src="img/montain.png" alt="Mountain" class="feature-icon">
-                            <span>Near Village</span>
+                <div class="premium-tour-card">
+                    <div class="tour-image-wrapper">
+                        <img src="img/Onemohute Wakatobi.jpg" alt="Underwater Adventure">
+                        <div class="image-overlay">
+                            <div class="tour-category">Petualangan</div>
                         </div>
                     </div>
-                </div>
-
-                <div class="tour-card">
-                    <div class="tour-image">
-                        <img src="img/Taman Nasional Wakatobi.jpg" alt="Taman Nasional Wakatobi">
-                        <div class="price-tag">Rp 4.500.000/orang</div>
-                    </div>
-                    <div class="tour-details">
-                        <div class="tour-duration">12 HARI TOUR</div>
-                        <h3 class="tour-title">Eksplorasi Taman Nasional Wakatobi</h3>
-                        <div class="tour-location">
-                            <i class="location-icon">📍</i>
-                            <span>Taman Nasional Wakatobi, Sulawesi Tenggara</span>
+                    <div class="tour-content">
+                        <div class="tour-meta">
+                            <span class="duration">10 Hari</span>
+                            <span class="rating">⭐ 4.8</span>
                         </div>
-                        <div class="tour-amenities">
-                            <div class="amenity">
-                                <img src="img/bad.png" alt="Bed" class="amenity-icon">
-                                <span>3</span>
+                        <h3>Petualangan Bawah Laut</h3>
+                        <p>Diving experience terbaik di perairan kristal Onemohute</p>
+                        <div class="tour-highlights">
+                            <div class="highlight">
+                                <img src="img/diving-mask.png" alt="Diving" class="highlight-icon">
+                                <span>Diving Laut Dalam</span>
                             </div>
-                            <div class="amenity">
-                                <img src="img/multiple-users-silhouette.png" alt="Users" class="amenity-icon">
-                                <span>5</span>
+                            <div class="highlight">
+                                <img src="img/boat.png" alt="Boat" class="highlight-icon">
+                                <span>Kehidupan Laut</span>
                             </div>
                         </div>
-                        <div class="tour-feature">
-                            <img src="img/montain.png" alt="Nature" class="feature-icon">
-                            <span>Near National Park</span>
+                        <div class="tour-pricing">
+                            <span class="current-price">Rp 3.200.000</span>
+                            <span class="price-note">per orang</span>
                         </div>
+                        <button class="book-now-btn">Pesan Sekarang</button>
                     </div>
                 </div>
 
-                <div class="tour-card">
-                    <div class="tour-image">
-                        <img src="img/Pulau Kapota.jpg" alt="Pulau Kapota">
-                        <div class="price-tag">Rp 2.800.000/orang</div>
+                <div class="premium-tour-card">
+                    <div class="tour-image-wrapper">
+                        <img src="img/Desa Wisata Kahianga.jpg" alt="Cultural Experience">
+                        <div class="image-overlay">
+                            <div class="tour-category">Budaya</div>
+                        </div>
                     </div>
-                    <div class="tour-details">
-                        <div class="tour-duration">6 HARI TOUR</div>
-                        <h3 class="tour-title">Petualangan di Pulau Kapota</h3>
-                        <div class="tour-location">
-                            <i class="location-icon">📍</i>
-                            <span>Pulau Kapota, Wakatobi</span>
+                    <div class="tour-content">
+                        <div class="tour-meta">
+                            <span class="duration">7 Hari</span>
+                            <span class="rating">⭐ 4.7</span>
                         </div>
-                        <div class="tour-amenities">
-                            <div class="amenity">
-                                <img src="img/bad.png" alt="Bed" class="amenity-icon">
-                                <span>2</span>
+                        <h3>Budaya Lokal Wakatobi</h3>
+                        <p>Merasakan kehidupan autentik masyarakat lokal Kahianga</p>
+                        <div class="tour-highlights">
+                            <div class="highlight">
+                                <img src="img/village.png" alt="Village" class="highlight-icon">
+                                <span>Desa Lokal</span>
                             </div>
-                            <div class="amenity">
-                                <img src="img/multiple-users-silhouette.png" alt="Users" class="amenity-icon">
-                                <span>4</span>
+                            <div class="highlight">
+                                <img src="img/painting.png" alt="Arts" class="highlight-icon">
+                                <span>Seni Tradisional</span>
                             </div>
                         </div>
-                        <div class="tour-feature">
-                            <img src="img/wave.png" alt="Beach" class="feature-icon">
-                            <span>Near Beach</span>
+                        <div class="tour-pricing">
+                            <span class="current-price">Rp 1.800.000</span>
+                            <span class="price-note">per orang</span>
                         </div>
+                        <button class="book-now-btn">Pesan Sekarang</button>
                     </div>
                 </div>
 
-                <div class="tour-card">
-                    <div class="tour-image">
-                        <img src="img/Wakatobi Dive Trip.jpg" alt="Wakatobi Dive Trip">
-                        <div class="price-tag">Rp 3.800.000/orang</div>
+                <div class="premium-tour-card">
+                    <div class="tour-image-wrapper">
+                        <img src="img/Taman Nasional Wakatobi.jpg" alt="National Park">
+                        <div class="image-overlay">
+                            <div class="tour-category">Alam</div>
+                        </div>
                     </div>
-                    <div class="tour-details">
-                        <div class="tour-duration">9 HARI TOUR</div>
-                        <h3 class="tour-title">Paket Diving Wakatobi</h3>
-                        <div class="tour-location">
-                            <i class="location-icon">📍</i>
-                            <span>Perairan Wakatobi, Sulawesi Tenggara</span>
+                    <div class="tour-content">
+                        <div class="tour-meta">
+                            <span class="duration">12 Hari</span>
+                            <span class="rating">⭐ 5.0</span>
                         </div>
-                        <div class="tour-amenities">
-                            <div class="amenity">
-                                <img src="img/bad.png" alt="Bed" class="amenity-icon">
-                                <span>2</span>
+                        <h3>Taman Nasional Premium</h3>
+                        <p>Eksplorasi lengkap dengan guide profesional dan fasilitas VIP</p>
+                        <div class="tour-highlights">
+                            <div class="highlight">
+                                <img src="img/destination.png" alt="Nature" class="highlight-icon">
+                                <span>Taman Nasional</span>
                             </div>
-                            <div class="amenity">
-                                <img src="img/multiple-users-silhouette.png" alt="Users" class="amenity-icon">
-                                <span>6</span>
+                            <div class="highlight">
+                                <img src="img/village.png" alt="Wildlife" class="highlight-icon">
+                                <span>Safari Satwa</span>
                             </div>
                         </div>
-                        <div class="tour-feature">
-                            <img src="img/swimming.ico" alt="Diving" class="feature-icon">
-                            <span>Diving Package</span>
+                        <div class="tour-pricing">
+                            <span class="current-price">Rp 4.500.000</span>
+                            <span class="price-note">per orang</span>
                         </div>
+                        <button class="book-now-btn">Pesan Sekarang</button>
+                    </div>
+                </div>
+
+                <div class="premium-tour-card">
+                    <div class="tour-image-wrapper">
+                        <img src="img/Pulau Kapota.jpg" alt="Island Adventure">
+                        <div class="image-overlay">
+                            <div class="tour-category">Pulau</div>
+                        </div>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-meta">
+                            <span class="duration">6 Hari</span>
+                            <span class="rating">⭐ 4.8</span>
+                        </div>
+                        <h3>Pulau Kapota Paradise</h3>
+                        <p>Island hopping dengan pemandangan pantai yang menakjubkan</p>
+                        <div class="tour-highlights">
+                            <div class="highlight">
+                                <img src="img/destination.png" alt="Island" class="highlight-icon">
+                                <span>Pulau Pribadi</span>
+                            </div>
+                            <div class="highlight">
+                                <img src="img/boat.png" alt="Beach" class="highlight-icon">
+                                <span>Pantai Pasir Putih</span>
+                            </div>
+                        </div>
+                        <div class="tour-pricing">
+                            <span class="current-price">Rp 2.800.000</span>
+                            <span class="price-note">per orang</span>
+                        </div>
+                        <button class="book-now-btn">Pesan Sekarang</button>
+                    </div>
+                </div>
+
+                <div class="premium-tour-card">
+                    <div class="tour-image-wrapper">
+                        <img src="img/Wakatobi Dive Trip.jpg" alt="Diving Package">
+                        <div class="image-overlay">
+                            <div class="tour-category">Menyelam</div>
+                        </div>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-meta">
+                            <span class="duration">9 Hari</span>
+                            <span class="rating">⭐ 4.9</span>
+                        </div>
+                        <h3>Menyelam Profesional</h3>
+                        <p>Paket diving dengan instruktur bersertifikat internasional</p>
+                        <div class="tour-highlights">
+                            <div class="highlight">
+                                <img src="img/diving-mask.png" alt="Instructor" class="highlight-icon">
+                                <span>Instruktur Pro</span>
+                            </div>
+                            <div class="highlight">
+                                <img src="img/historical.png" alt="Certificate" class="highlight-icon">
+                                <span>Sertifikat PADI</span>
+                            </div>
+                        </div>
+                        <div class="tour-pricing">
+                            <span class="current-price">Rp 3.800.000</span>
+                            <span class="price-note">per orang</span>
+                        </div>
+                        <button class="book-now-btn">Pesan Sekarang</button>
                     </div>
                 </div>
             </div>
@@ -375,66 +498,54 @@
                 <div class="post-card">
                     <div class="post-image">
                         <img src="img/Wakatobi Dive Trip.jpg" alt="Diving Wakatobi">
+                        <div class="post-badge trending">Trending</div>
                         <div class="post-date">
                             <span class="date-number">15</span>
                             <span class="date-month">Des</span>
                             <span class="date-year">2024</span>
                         </div>
-                    </div>
-                    <div class="post-content">
-                        <h3 class="post-title">Panduan Lengkap Diving di Wakatobi</h3>
-                        <p class="post-excerpt">Jelajahi keindahan bawah laut Wakatobi dengan panduan diving terlengkap. Temukan spot terbaik untuk melihat terumbu karang yang memukau.</p>
-                        <button class="read-more-btn">Baca Selengkapnya</button>
+                        <div class="image-overlay">
+                            <h3 class="post-title">Panduan Lengkap Diving di Wakatobi</h3>
+                            <p class="post-excerpt">Jelajahi keindahan bawah laut Wakatobi dengan panduan diving terlengkap. Temukan spot terbaik untuk melihat terumbu karang yang memukau.</p>
+                            <button class="read-more-btn">Baca Selengkapnya</button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="post-card">
                     <div class="post-image">
                         <img src="img/Desa Wisata Kahianga.jpg" alt="Budaya Wakatobi">
+                        <div class="post-badge new">Baru</div>
                         <div class="post-date">
                             <span class="date-number">12</span>
                             <span class="date-month">Des</span>
                             <span class="date-year">2024</span>
                         </div>
-                    </div>
-                    <div class="post-content">
-                        <h3 class="post-title">Mengenal Budaya Lokal Wakatobi</h3>
-                        <p class="post-excerpt">Pelajari tradisi dan budaya unik masyarakat Wakatobi yang kaya akan nilai-nilai luhur dan kearifan lokal.</p>
-                        <button class="read-more-btn">Baca Selengkapnya</button>
+                        <div class="image-overlay">
+                            <h3 class="post-title">Mengenal Budaya Lokal Wakatobi</h3>
+                            <p class="post-excerpt">Pelajari tradisi dan budaya unik masyarakat Wakatobi yang kaya akan nilai-nilai luhur dan kearifan lokal.</p>
+                            <button class="read-more-btn">Baca Selengkapnya</button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="post-card">
                     <div class="post-image">
                         <img src="img/Benteng Liya Togo.jpg" alt="Sejarah Wakatobi">
+                        <div class="post-badge popular">Populer</div>
                         <div class="post-date">
                             <span class="date-number">10</span>
                             <span class="date-month">Des</span>
                             <span class="date-year">2024</span>
                         </div>
-                    </div>
-                    <div class="post-content">
-                        <h3 class="post-title">Sejarah Benteng Liya Togo</h3>
-                        <p class="post-excerpt">Temukan kisah menarik di balik Benteng Liya Togo, saksi bisu perjuangan dan sejarah panjang Wakatobi.</p>
-                        <button class="read-more-btn">Baca Selengkapnya</button>
+                        <div class="image-overlay">
+                            <h3 class="post-title">Sejarah Benteng Liya Togo</h3>
+                            <p class="post-excerpt">Temukan kisah menarik di balik Benteng Liya Togo, saksi bisu perjuangan dan sejarah panjang Wakatobi.</p>
+                            <button class="read-more-btn">Baca Selengkapnya</button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="post-card">
-                    <div class="post-image">
-                        <img src="img/Pulau Kapota.jpg" alt="Pulau Kapota">
-                        <div class="post-date">
-                            <span class="date-number">08</span>
-                            <span class="date-month">Des</span>
-                            <span class="date-year">2024</span>
-                        </div>
-                    </div>
-                    <div class="post-content">
-                        <h3 class="post-title">Keindahan Pulau Kapota</h3>
-                        <p class="post-excerpt">Nikmati keindahan alam Pulau Kapota dengan pantai berpasir putih dan air laut yang jernih. Tempat yang sempurna untuk relaksasi dan menikmati sunset.</p>
-                        <button class="read-more-btn">Baca Selengkapnya</button>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -487,15 +598,15 @@
                     <h3>Ada Pertanyaan?</h3>
                     <div class="contact-info">
                         <div class="contact-item">
-                            <span class="contact-icon">📍</span>
+                            <img src="img/location.png" alt="Location" class="contact-icon">
                             <span>Kabupaten Wakatobi, Sulawesi Tenggara, Indonesia</span>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-icon">📞</span>
+                            <img src="img/telephone-call.png" alt="Phone" class="contact-icon">
                             <span>+62 ### ### ####</span>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-icon">✉️</span>
+                            <img src="img/email.png" alt="Email" class="contact-icon">
                             <span>info@wakatobitravel.com</span>
                         </div>
                     </div>
@@ -518,5 +629,6 @@
             </div>
         </div>
     </section>
+
 </body>
 </html>
